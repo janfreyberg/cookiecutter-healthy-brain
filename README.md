@@ -1,6 +1,6 @@
 ## Cookiecutter template for working with the healthy brain data
 
-This is a template that implements some nice data-import syntax for the healthy brain Child Mind Institute data.
+This is a template that implements some nice data-import syntax for the [Child Mind Institute's Healthy Brain Data](http://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/index.html).
 
 The main benefit to using this template is the provided data imports.
 
