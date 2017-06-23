@@ -35,6 +35,11 @@ for raw in raws():
     # <your code here>
 ```
 
+You can also import the phenotypic data:
+```python
+from data import phenotypes
+```
+
 #### Implemented so far
 ---
 
@@ -61,4 +66,9 @@ for epoch in epochs(tmin=0, tmax=20):
 ```
 
 The epoching is done semi-intelligently, so for example, when importing for the `video` condition, you get Epochs that start with the video start and end with the video end. Do double check each import and how epochs are defined, simply check the corresponding python scripts!
+
+#### To be implemented
+---
+
+Similar import statements for the rest of the EEG data, and the MRI data.
 
