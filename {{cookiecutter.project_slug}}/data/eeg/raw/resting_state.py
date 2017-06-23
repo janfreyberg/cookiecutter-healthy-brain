@@ -12,7 +12,7 @@ from functools import partial
 
 
 ftype = 'raw'
-paradigm = 'RestingState'
+tasktype = 'RestingState'
 
 
 # implement the raw data structures as a generator
@@ -36,4 +36,4 @@ def events():
 
 
 # epochs
-epochs = partial(data.eeg.epochs(ftype, tasktype, **kwargs))
+epochs = partial(data.eeg.epochs, ftype, tasktype)

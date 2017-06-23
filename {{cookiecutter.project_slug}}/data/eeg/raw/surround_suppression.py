@@ -7,7 +7,6 @@ import pandas as pd
 # get the data path (not sure this works)
 from data import datafolder
 # get the list function
-
 import data.eeg
 from functools import partial
 

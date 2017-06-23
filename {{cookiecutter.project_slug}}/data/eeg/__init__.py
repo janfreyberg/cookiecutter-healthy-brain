@@ -68,10 +68,10 @@ def raws(ftype, tasktype, **kwargs):
 
             else:
                 mtg = None
-                ch_names = None
+                ch_names = data.shape[0]
 
             # make info structure
-            info = mne.create_info(ch_names=data.shape[0], sfreq=500,
+            info = mne.create_info(ch_names=ch_names, sfreq=500,
                                    ch_types='eeg', montage=mtg)
             info['subject_info'] = pid
 

@@ -7,12 +7,12 @@ import pandas as pd
 # get the data path
 from data import datafolder
 # get the list function
-from data.eeg import _get_files
+import data.eeg
 from functools import partial
 
 
 ftype = 'preprocessed'
-paradigm = 'RestingState'
+tasktype = 'RestingState'
 
 
 # implement the raw data structures as a generator
@@ -36,4 +36,4 @@ def events():
 
 
 # epochs
-epochs = partial(data.eeg.epochs(ftype, tasktype, **kwargs))
+epochs = partial(data.eeg.epochs, ftype, tasktype)
