@@ -4,6 +4,12 @@ This is a template that implements some nice data-import syntax for the healthy 
 
 The main benefit to using this template is the provided data imports.
 
+To see both live in action, take a look at the following notebooks:
+
+- [00.01-get-data.ipynb]({{cookiecutter.project_slug}}/00.01-get-data.ipynb)
+- [00.02-use-eeg-data.ipynb]({{cookiecutter.project_slug}}/00.02-use-eeg-data.ipynb)
+
+
 #### Downloading data
 ---
 
