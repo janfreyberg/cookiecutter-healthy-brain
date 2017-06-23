@@ -22,7 +22,7 @@ This will download 5 EEG  datasets
 
 You can also import data by simply using an import statement:
 
-```
+```python
 from data.eeg.preprocessed.resting_state import raws
 
 for raw in raws():
@@ -38,7 +38,7 @@ When import raw data (`from data.eeg.raw...`), you will literally just get all t
 
 So the following:
 
-```
+```python
 from data.eeg.preprocessed.resting_state import raws, events
 
 for raw, event in zip(raws(), events():
@@ -47,7 +47,7 @@ for raw, event in zip(raws(), events():
 
 would be equivalent to:
 
-```
+```python
 from data.eeg.preprocessed.resting_state import epochs
 
 for epoch in epochs(tmin=0, tmax=20):
